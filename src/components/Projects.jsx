@@ -7,7 +7,7 @@ function Projects() {
       tech: "React, CSS, JavaScript",
       github: "https://github.com/TBradley1211/portfolio-website",
       demo: "",
-      status: "In Progress"
+      status: "Complete"
     },
     {
       title: "React Task Manager",
@@ -42,7 +42,15 @@ function Projects() {
           <div className="project-card" key={index}>
             <div className="project-top">
               <h3>{project.title}</h3>
-              <span className="status-badge">{project.status}</span>
+              <span
+                className={`status-badge ${
+                  project.status === "Complete"
+                    ? "status-complete"
+                    : "status-progress"
+                }`}
+              >
+                {project.status}
+              </span>
             </div>
 
             <p className="project-description">{project.description}</p>

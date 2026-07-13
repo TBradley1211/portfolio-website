@@ -203,13 +203,21 @@ li {
 }
 
 .status-badge {
-  background: #eafaf8;
-  color: #5fc9bf;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
   white-space: nowrap;
+}
+
+.status-complete {
+  background: #dff5ea;
+  color: #2e8b57;
+}
+
+.status-progress {
+  background: #eafaf8;
+  color: #5fc9bf;
 }
 
 .project-description {
